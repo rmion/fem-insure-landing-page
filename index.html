@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Insure landing page</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="col-group">
+        <p><img src="./images/logo.svg" alt="Insure logo" /></p>
+        <p><button class="button menu" id="nav-toggle" href="#menu" aria-pressed="false" aria-haspopup="true">Menu</button></p>
+        <nav id="menu">
+          <ul>
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a class="button" href="#">View plans</a></li>
+          </ul>
+        </nav>  
+      </div>  
+    </div>
+  </header>
+  <main>
+    <p class="container">
+      <img class="desktop-hide" src="./images/image-intro-mobile.jpg" alt="Family holding hands" />
+      <img class="mobile-hide" src="./images/image-intro-desktop.jpg" alt="Family holding hands" />
+    </p>  
+    <article class="lead-in reversed">
+      <div class="container">
+        <h1>Humanizing your insurance.</h1>
+        <p>
+          Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.
+        </p>
+        <p>
+          <a class="button" href="#">View plans</a>
+        </p>
+      </div>
+    </article>
+    <article>
+      <div class="container">
+        <h2>We’re different</h2>
+        <dl class="features">
+          <div>
+            <dt>Snappy Process</dt>
+            <dd>Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</dd>      
+          </div>
+          <div>
+            <dt>Affordable Prices</dt>
+            <dd>We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</dd>      
+          </div>
+          <div>
+            <dt>People First</dt>
+            <dd>Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</dd>      
+          </div>
+        </dl>
+      </div>
+    </article>
+  </main>
+  <aside class="reversed">
+    <div class="container">
+      <h2>Find out more about how we work</h2>
+      <p><a href="#" class="button">How we work</a></p>
+    </div>
+  </aside>
+  <footer>
+    <div class="container">
+      <section>
+        <p><img src="./images/logo.svg" alt="" /></p>
+        <ul class="social-icons">
+          <li>
+            <a href="#">
+              <img src="./images/icon-facebook.svg" alt="Follow us on Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/icon-twitter.svg" alt="Follow us on Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/icon-pinterest.svg" alt="Follow us on Pinterest" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/icon-instagram.svg" alt="Follow us on Instagram" />
+            </a>
+          </li>
+        </ul>  
+      </section>
+      <nav>
+        <dl class="sitemap">
+          <div>
+            <dt>Our company</dt>
+            <dd>
+              <ul>
+                <li><a href="#">How we work</a></li>
+                <li><a href="#">Why Insure?</a></li>
+                <li><a href="#">View plans</a></li>
+                <li><a href="#">Reviews</a></li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Help me</dt>
+            <dd>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Contact</dt>
+            <dd>
+              <ul>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Live chat</a></li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Others</dt>
+            <dd>
+              <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Licenses</a></li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+      </nav>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://rmion.com">Robert Mion</a>.
+      </div>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('nav-toggle').addEventListener('click', function(e) {
+        e.target.setAttribute('aria-pressed', !e.target.getAttribute('aria-pressed'));
+        document.getElementById('menu').classList.toggle('collapsed');
+      });
+    })
+  </script>
+</body>
+</html>
